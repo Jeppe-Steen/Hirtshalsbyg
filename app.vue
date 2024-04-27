@@ -1,8 +1,23 @@
 <script setup>
-const handleCall = () => {
-  window.open("tel:+4528727599");
-  return;
-}
+  const handleCall = () => {
+    window.open("tel:+4528727599");
+    return;
+  }
+
+  useHead({
+    title: 'Hirtshals Byg',
+    meta: [
+      { name: 'description', content: 'Hirtshals Byg, din partner når du står og skal bruge hjælp til dit næste projekt.' }
+    ],
+  })
+
+  useSeoMeta({
+    title: 'Hirtshals Byg',
+    ogTitle: 'Hirtshals Byg',
+    description: 'Hirtshals Byg, din partner når du står og skal bruge hjælp til dit næste projekt.',
+    ogDescription: 'Hirtshals Byg, din partner når du står og skal bruge hjælp til dit næste projekt.'
+  })
+
 </script>
 <template>
   <div class="page-wrapper">
