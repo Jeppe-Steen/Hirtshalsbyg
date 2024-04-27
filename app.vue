@@ -23,7 +23,7 @@
         Hirtshals byg
       </h1>
       <h2 class="hero__subheader white shadow"> 
-        Tel: <a class="white" href="tel: +4528727599">28 72 75 99</a>
+        Tlf: <a class="white" href="tel: +4528727599">28 72 75 99</a>
       </h2>
       <p class="hero__description white">
         Hirtshals byg står klar til at hjælpe dig med dit næste projekt.
