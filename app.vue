@@ -51,7 +51,7 @@
   }
 
   .white {
-    color: white;
+    color: white !important;
   }
 
   .shadow {
@@ -84,6 +84,7 @@
       &__subheader {
         cursor: pointer;
         font-size: 1.6rem;
+        text-decoration: none !important;
 
         @media (min-width: 600px) {
           font-size: 2rem;
