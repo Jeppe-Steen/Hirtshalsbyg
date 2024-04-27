@@ -1,9 +1,4 @@
 <script setup>
-  const handleCall = () => {
-    window.open("tel:+4528727599");
-    return;
-  }
-
   useHead({
     title: 'Hirtshals Byg',
     meta: [
@@ -30,8 +25,8 @@
       <h1 class="hero__heading white shadow">
         Hirtshals byg
       </h1>
-      <h2 class="hero__subheader white shadow" @click="handleCall()">
-        Tlf. 28 72 75 99
+      <h2 class="hero__subheader white shadow"> 
+        Tel: <a class="white" href="tel: +4528727599">28 72 75 99</a>
       </h2>
       <p class="hero__description white">
         Hirtshals byg står klar til at hjælpe dig med dit næste projekt.
@@ -85,10 +80,13 @@
       &__subheader {
         cursor: pointer;
         font-size: 1.6rem;
-        text-decoration: none !important;
 
         @media (min-width: 600px) {
           font-size: 2rem;
+        }
+
+        a {
+          text-decoration: none !important;
         }
       }
 
