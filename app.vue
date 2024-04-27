@@ -7,7 +7,8 @@
   useHead({
     title: 'Hirtshals Byg',
     meta: [
-      { name: 'description', content: 'Hirtshals Byg, din partner når du står og skal bruge hjælp til dit næste projekt.' }
+      { name: 'description', content: 'Hirtshals Byg, din partner når du står og skal bruge hjælp til dit næste projekt.' },
+      { name: 'format-detection', content: 'telephone=no' }
     ],
     htmlAttrs: {
       lang: 'dk'
