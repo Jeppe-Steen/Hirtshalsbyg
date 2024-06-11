@@ -32,6 +32,11 @@
         Så tøv endelig ikke med at kontakte os hvis du står og skal have hjælp, vi er klar til at hjælpe med store som små opgaver!
       </p>
     </header>
+    <section class="hero__gallery gallery">
+      <header class="gallery__teaser">
+        <img src="./assets/images/terrasse_2/img_1.JPG" alt="">
+      </header>
+    </section>
   </main>
 </template>
 
@@ -52,13 +57,13 @@
   }
 
   .page {
-    background-color: #333;
     width: 100%;
     height: 100vh;
 
     .hero {
       width: 100%;
-      height: 100vh;
+      background-color: #333;
+      height: 90vh;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -91,6 +96,37 @@
         width: 80%;
         text-align: center;
         margin-top: 10px;
+      }
+    }
+
+    .gallery {
+      width: 100%;
+      min-height: 90vh;
+      position: relative;
+
+      @media (min-width: 600px) {
+        min-height: fit-content;
+      }
+
+      &__teaser {
+        position: relative;
+        width: 80%;
+        height: 50vh;
+        top: -50px;
+        left: 50%;
+        transform: translateX(-50%);
+        overflow: hidden;
+        
+        @media (min-width: 600px) {
+          width: 500px;
+          transform: unset;
+          left: 50px;
+          padding: 10px
+        }
+
+        img {
+          height: 100%;
+        }
       }
     }
   }
